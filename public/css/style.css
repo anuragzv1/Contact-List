@@ -1,0 +1,65 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Indie Flower', sans-serif;
+    background: url(../images/bg.jpg);
+}
+
+#main_content{
+    text-align: center;
+    
+}
+
+#main_content ul {
+    padding:0;
+    
+}
+
+#main_content ul li{
+    margin-top: 3px;
+    border-radius: 12px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 250px;
+    height: 30px;
+    background-color: aquamarine;
+    list-style: none;
+    font-size: 17px;
+    box-shadow: 8px 9px 5px -1px #693939;
+}
+
+#main_content ul li:hover{
+    background-color: darkcyan;
+}
+
+#c_rem{
+    cursor: pointer;
+    font-size: 27px;
+}
+#c_rem:hover{
+    color: blue;
+    font-size: 30px;
+}
+
+#form_div input[type="text"] , input[type = "number"] {
+    border: 0;
+    width: 145px;
+    height: 32px;
+    font-family: 'Indie Flower', sans-serif;
+    color: black;
+    font-size: 17px;
+}
+
+#form_div button{
+    background-color: #f16060;
+    border: 0;
+    height: 32px;
+    font-family: 'Indie Flower', sans-serif;
+    color: black;
+    font-size: 17px;
+}
+

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Contact List</title>
+        <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+        <link rel= "stylesheet" href= "../css/style.css">
+    </head>
+
+    <body>
+        <div id = "main_content">
+            <h1>My Contact list</h1>
+            <ul id ="contact_list">
+
+                <% for(var i=0; i<data.length;i++) { %>
+                    <li>
+                        <span id ="c_name"><%= data[i].name %></span> 
+                        <span id ="c_num">  <%= data[i].number %></span> 
+                        <span id ="c_rem"> <a href="deletecontact?id=<%= data[i]._id %>">x</a></span> 
+                    </li>
+                    <% } %>
+
+
+
+
+                <li>
+                    <span id ="c_name">Anurag</span>
+                    <span id ="c_num">+918800299509</span>
+                    <span id ="c_rem"> x </span>
+
+                </li>
+                <li>
+                    <span id ="c_name">Alok</span>
+                    <span id ="c_num">+7906204237</span>
+                    <span id ="c_rem"> x </span>
+
+                </li>
+            </ul>
+        </div>
+        <div id = "form_div">
+            <form method="POST" action="/addcontact">
+                <input type="text" name = "name" placeholder="Enter name.." !required>
+                <input type="number" name = "number" placeholder="Enter number" !required>
+                <button id = "add_btn" type = submit>add me!</button>
+
+            </form>
+
+            
+        </div>
+    </body>
+</html>
